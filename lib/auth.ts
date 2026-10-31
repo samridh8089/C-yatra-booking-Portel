@@ -10,11 +10,11 @@ export interface SessionData {
 }
 
 // Configurable default credentials via environment variables
-export const DEFAULT_OWNER_EMAIL = process.env.OWNER_EMAIL || "owner@c-yatra.com";
-export const DEFAULT_OWNER_PASSWORD = process.env.OWNER_PASSWORD || "Owner@CYatra2026!";
+export const DEFAULT_OWNER_EMAIL = process.env.OWNER_EMAIL || "owner@cyatra.com";
+export const DEFAULT_OWNER_PASSWORD = process.env.OWNER_PASSWORD || "Owner@123";
 
-export const DEFAULT_ADMIN_EMAIL = process.env.ADMIN_EMAIL || "admin@c-yatra.com";
-export const DEFAULT_ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "Admin@CYatra2026!";
+export const DEFAULT_ADMIN_EMAIL = process.env.ADMIN_EMAIL || "admin@cyatra.com";
+export const DEFAULT_ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "Admin@123";
 
 export async function getSession(): Promise<UserProfile | null> {
   // 1. First check Supabase session if configured
